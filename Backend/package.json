@@ -10,10 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "cors": "^2.8.5",
-=======
->>>>>>> upstream/main
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongoose": "^6.3.6",
+    "nodemon": "^2.0.16"
   }
 }

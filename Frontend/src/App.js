@@ -11,6 +11,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contactus from './components/Contactus';
 import Main from './components/OurDoctors/Main';
+import Appointment from './components/appointment';
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/about" element={<About mode={"light"}/>}></Route>
           <Route exact path="/doctors" element={<Main/>}></Route>
           <Route exact path="/contact" element={<Contactus/>}></Route>
+          <Route exact path="/appointment" element={<Appointment/>}></Route>
         </Routes>
         <Footer/>
       </Router>

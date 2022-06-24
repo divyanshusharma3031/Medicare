@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 const card = ({ infoData }) => {
     return (
         <>
@@ -7,7 +7,6 @@ const card = ({ infoData }) => {
                 {infoData.map((curEle) => {
                     const {id,category,name,description,image}=curEle;
                     return (
-
                         <>
                             <div className='card-container1' key={id}>
                                 <div className='card1'>
@@ -18,7 +17,7 @@ const card = ({ infoData }) => {
                                         <span className='card-description1 subtle1'>{description}</span>
                                     </div>
                                     <img src={image} alt="images" className='card-media1' />
-                                    <span className='card-tag1 subtle1'>Book Appointment</span>
+                                    <Link to="/appointment" state={{doctor:name}}><span className='card-tag1 subtle1'>Book Appointment</span></Link>
                                 </div>
                             </div>
                         </>
